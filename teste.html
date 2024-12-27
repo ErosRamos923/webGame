@@ -1,0 +1,155 @@
+<html lang="pt">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Jogo Web estilo RPGMO
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #1e2329;
+            color: white;
+            padding: 10px 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        nav {
+            float: right;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .game-screen {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            background-color: #000;
+            position: relative;
+        }
+        .game-screen img {
+            position: absolute;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        .controls button {
+            background-color: #1e2329;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .controls button:hover {
+            background-color: #f0b90b;
+        }
+        footer {
+            background-color: #1e2329;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="logo">
+     Jogo estilo RPGMO
+    </div>
+    <nav>
+     <ul>
+      <li>
+       <a href="#">
+        Início
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Jogo
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Sobre
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Contato
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <div style="clear: both;">
+    </div>
+   </div>
+  </header>
+  <div class="game-container container">
+   <div class="game-screen">
+    <img alt="Tela do jogo com uma paisagem de fantasia e sprites de personagens" height="600" src="https://storage.googleapis.com/a1aa/image/QGhqN42LIQa2CZHpLhfniXkblENnnJwSd1UDjmzkcwqGCnfTA.jpg" width="800"/>
+   </div>
+   <div class="controls">
+    <button onclick="moveCharacter('up')">
+     Cima
+    </button>
+    <button onclick="moveCharacter('left')">
+     Esquerda
+    </button>
+    <button onclick="moveCharacter('down')">
+     Baixo
+    </button>
+    <button onclick="moveCharacter('right')">
+     Direita
+    </button>
+   </div>
+  </div>
+  <footer>
+   <div class="container">
+    <p>
+     © 2023 Jogo estilo RPGMO. Todos os direitos reservados.
+    </p>
+   </div>
+  </footer>
+  <script>
+   function moveCharacter(direction) {
+            // Função de espaço reservado para lidar com o movimento do personagem
+            console.log('Mover personagem:', direction);
+        }
+  </script>
+ </body>
+</html>
